@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex03</title>
+
+    <input type="text" id="txta">
+    <input type="text" id="txtb">
+
+    <button onclick="tongab()">
+        Tính tổng
+    </button>
+   
+</head>
+<body>
+    <script>
+        function tongab() {
+           var name = document.getElementById('txta').value;
+           var name = document.getElementById('txtb').value;
+        }
+        if(txta == null || txta == "" || isNaN(txta)) {
+            document.write("<font color='red'>You must enter a number</font>");
+            
+        } else if(txtb == null || txtb == "" || isNaN(txtb)) {
+            document.write("<font color='red'>You must enter a number</font>"); 
+             
+        } else {
+            var result = parseFloat(txta) + parseFloat(txtb)
+        alert('Result:\n' +
+              txta + " + " + txtb + " = " + result);
+            
+
+        }
+        
+    </script>
+</body>
+</html>
